@@ -1,0 +1,59 @@
+/* OrderSuccessMessage.css */
+.order-success {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background overlay */
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.order-success.show {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+.order-success.hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.center {
+  text-align: center;
+}
+
+.success-message {
+  display: inline-block;
+  text-align: center;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.success-message h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  font-size: 26px;
+  margin-top: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,94 @@
+ul.navul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0545ce;
+    height: 80px;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Distribute items evenly along the horizontal axis */
+    align-items: center; /* Center items vertically within the navbar */
+    width: 100%;
+  }
+  
+  li.e {
+    flex: 1; /* Distribute the width equally among menu items */
+    text-align: center; /* Center text horizontally */
+  }
+  .logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo within its container */
+  }
+  .logo img {
+    /* margin-right: 10px; Add spacing between text and image */
+    margin-left: 20px;
+    width: 140px;
+    margin-bottom: 5px;
+    height: auto; /* Ensure the image scales proportionally */
+    /* vertical-align: middle; */
+    /* align-items: center; */
+  }
+  
+  li.e a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: 600;
+    line-height: 1.56;
+    letter-spacing: normal;
+  }
+  li.e {
+    flex: 1; /* Distribute the width equally among menu items */
+  }
+  li.right {
+    margin-right: 20px; /* Add some spacing to the right-aligned items */
+  }
+  
+  li.right button {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    text-decoration: none;
+    line-height: 1.56;
+    letter-spacing: normal;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .border {
+    border: solid 1px white;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 1000px) {
+    li.e a {
+      font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 700px) {
+    li.e {
+      flex: 0; /* Reset flex for menu items on smaller screens */
+      width: auto;
+    }
+  
+    li.e a {
+      font-size: 13px;
+    }
+  
+    li.right button {
+      font-size: 12px; /* Adjust font size for smaller screens */
+      margin-right: 10px; /* Reduce right margin for buttons */
+    }
+  
+    ul.navul {
+      height: 70px;
+    }
+  }
+  

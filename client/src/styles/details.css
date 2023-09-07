@@ -1,0 +1,336 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  width: 100%;
+  margin: 50px auto;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 100px;
+  align-items: center;
+}
+
+.pnf {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #333; /* Text color */
+}
+
+.error-text {
+  font-size: 48px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #ff5722; /* Cool color for the error text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for a cool effect */
+}
+
+.not-found-text {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 16px; /* Spacing between error and not-found text */
+}
+
+/* Styles for the back button */
+.back-button {
+  display: inline-block;
+  position: relative;
+  margin-top: 24px; /* Adjust the spacing from the not-found text */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-text {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ff5722; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff5722; /* Button background color */
+  border-radius: 5px;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.back-button:hover .button-text {
+  transform: scale(1.05); /* Button scaling on hover */
+}
+
+.back-button:hover .button-bg {
+  transform: scale(1.1); /* Background scaling on hover */
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border-bottom: solid 2px #d2d9e6;
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  border: none;
+  background-color: white;
+  float: left;
+  margin: 0px 30px 0px 0px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #192f60;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid #ce0505;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+.mainhead {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #192f60;
+  margin: 40px 0;
+}
+.subhead {
+  margin: 30px 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #192f60;
+}
+.cuisine,
+.cost {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #636f88;
+}
+.phone {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f67082;
+}
+.address {
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #636f88;
+  width: 350px;
+}
+
+.OpenMenu {
+  padding: 10px 15px 10px 15px;
+  margin: 20px 0px;
+  border-radius: 6px;
+  background-color: #ce0505;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.resname {
+  font-family: "Poppins", sans-serif;
+  font-size: 43px;
+  font-weight: 600;
+  color: #192f60;
+  margin: 40px 0;
+}
+.banner {
+  border: 4px solid #3498db; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Box shadow for a nice effect */
+  width: 50%;
+  height: 20%;
+  flex: 1;
+  max-width: 40%;
+  max-height: 20%;
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift */
+  margin-bottom: 20px;
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  transition: transform 0.3s ease; /* Add a transform transition for smooth animation */
+  overflow: hidden; /* Hide overflow to crop the image initially */
+}
+.banner:hover {
+  transform: scale(1.05); /* Enlarge the image slightly on hover */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  overflow: hidden; /* Hide overflow even on hover */
+}
+.pnf {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #192f60;
+  width: 80%;
+  margin: 40px auto 0 auto;
+}
+.menuItem {
+  height: 200px;
+  width: 100%;
+  border-bottom: solid 1px #c7c7c7;
+  margin: 10px auto;
+  padding: 10px 0px;
+  font-family: "Poppins", sans-serif;
+}
+.dish {
+  color: #292c40;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 5px 0;
+  padding: 0;
+}
+.dishcost {
+  color: #292c40;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0;
+  padding: 0;
+}
+.dishdes {
+  color: #696b78;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+  padding: 0;
+}
+.menuleft {
+  float: left;
+  width: 70%;
+}
+.menuright {
+  float: right;
+  width: 30%;
+}
+.dishImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+.addDish {
+  width: 71px;
+  height: 29px;
+  padding: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ce0505;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
+.addDish2 {
+  margin: 10px auto;
+  text-align: center;
+}
+.indec {
+  background-color: #ce0505;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 3px;
+}
+.quantity {
+  width: 30px;
+  border: none;
+  text-align: center;
+  color: #292c40;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+.paynow {
+  width: 100%;
+  height: 70px;
+  background-color: #f5f8ff;
+}
+.paynowpara {
+  color: #292c40;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 20px auto;
+}
+.paynowbutt {
+  width: 100px;
+  height: 50px;
+  padding: 4px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ce0505;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin: 10px auto;
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 990px) {
+  .banner {
+    width: 100%;
+    height: 300px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 605px) {
+  .banner {
+    width: 100%;
+    height: 200px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .pnf {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #192f60;
+    width: 90%;
+    margin: 30px auto 0 auto;
+  }
+  .resname {
+    font-size: 35px;
+
+    margin: 20px 0;
+  }
+}
