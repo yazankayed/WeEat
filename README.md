@@ -1,4 +1,4 @@
-# WeEat
+![image](https://github.com/yazankayed/WeEat/assets/131342932/7abe6440-1f4e-43c0-b042-16230e8cc409)# WeEat
 
 Welcome to WeEat, your one-stop destination for delicious food delivered right to your doorstep! Explore a wide range of cuisines and discover your new favorite restaurants. Place your order with ease and enjoy a convenient dining experience.
 
@@ -33,6 +33,19 @@ Follow these instructions to get a copy of the WeEat food ordering website up an
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (Node Package Manager)
 - [MongoDB](https://www.mongodb.com/) for database storage
 - API keys for any external services (e.g., Google Maps API for location services)
+
+### Screenshots
+# FrontPage
+  ![](https://i.imgur.com/rqeob18.jpeg)
+
+# Restaurant Filter/search
+  ![](https://i.imgur.com/2JMB9hL.png)
+
+# Detail/Buy Page
+  ![](https://i.imgur.com/LKzeADy.png)
+
+# Signup Page
+  ![](https://i.imgur.com/zGFDuU2.png)
 
 ### Installation
 
