@@ -1,4 +1,4 @@
-![image](https://github.com/yazankayed/WeEat/assets/131342932/7abe6440-1f4e-43c0-b042-16230e8cc409)# WeEat
+# WeEat
 
 Welcome to WeEat, your one-stop destination for delicious food delivered right to your doorstep! Explore a wide range of cuisines and discover your new favorite restaurants. Place your order with ease and enjoy a convenient dining experience.
 
